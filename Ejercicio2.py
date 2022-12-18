@@ -82,6 +82,13 @@ def crea_tablero(n):
             tablero[i].append(0)
     return tablero
 
+def poner_torres(tablero):
+    for i in range(len(tablero)):
+        tablero[i][0] = 1
+        tablero[i][-1] = 2
+    tablero[0].reverse()
+    return tablero
+
 
 
 
