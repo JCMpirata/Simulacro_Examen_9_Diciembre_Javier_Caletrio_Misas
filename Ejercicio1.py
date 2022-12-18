@@ -23,4 +23,8 @@ def minion_game(string):
     else:
         print("Empate")
 
+if __name__ == '__main__':
+
+    minion_game('BANANA')
+
         
