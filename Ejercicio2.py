@@ -29,5 +29,10 @@ def movimiento(jugador, tabla):
     tabla[c][posicion] = jugador
     return tabla
 
+def mostrar_matriz(matriz):
+    for i in range(len(matriz)):
+        print(matriz[i])
+
+
 
     
