@@ -74,6 +74,15 @@ def numero(texto, min, max):
      if num <= max and num >= min:
          return num
 
+def crea_tablero(n):
+    tablero = []
+    for i in range(n):
+        tablero.append([])
+        for j in range(n):
+            tablero[i].append(0)
+    return tablero
+
+
 
 
 
