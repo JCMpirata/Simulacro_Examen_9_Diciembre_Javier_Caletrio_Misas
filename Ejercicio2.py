@@ -23,7 +23,6 @@ def movimiento(jugador, tabla):
     if (posiciono + f < 0 or posiciono + f > len(tabla)-1) or tabla[c][posicion] != 0:
                 print("no puedes mover la torre a esa posicion")
                 mover = True
-                break
     
     tabla[c][posiciono] = 0
     tabla[c][posicion] = jugador
