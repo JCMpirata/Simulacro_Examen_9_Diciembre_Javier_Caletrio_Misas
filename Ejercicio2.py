@@ -45,6 +45,25 @@ def juego(tablero):
         else:
             jugador = True
 
+def puede_moverse(jugador, tabla):
+    if jugador:
+        posicion = tabla[0][1]
+    else:
+        posicion = tabla[0][len(tabla)-2]
+
+    if posicion != (int(not jugador)+1):
+        return True
+    
+    for c in range(len(tabla)-1):
+        if jugador:
+            posicion = tabla[c+1][len(tabla)-2]
+        else:
+            posicion = tabla[c+1][1]
+        if posicion != (int(not jugador)+1):
+            return True
+    return False
+
+
 
 
 
