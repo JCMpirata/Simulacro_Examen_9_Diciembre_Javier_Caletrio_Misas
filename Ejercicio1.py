@@ -16,4 +16,11 @@ def minion_game(string):
                 substrings[string[i:j]] = substrings.get(string[i:j], 0) + 1
             stuart_score = sum(substrings.values())
 
+    if kevin_score > stuart_score:
+        print("Kevin es el ganador con ", kevin_score)
+    elif kevin_score < stuart_score:
+        print("Stuart es el ganador con ", stuart_score)
+    else:
+        print("Empate")
+
         
