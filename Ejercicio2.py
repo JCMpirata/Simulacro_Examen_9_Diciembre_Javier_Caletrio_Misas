@@ -63,6 +63,16 @@ def puede_moverse(jugador, tabla):
             return True
     return False
 
+def numero(texto, min, max):
+  while True:
+    num = input(texto)
+    try:
+        num = int(num)
+    except:
+        pass 
+    else:    
+     if num <= max and num >= min:
+         return num
 
 
 
