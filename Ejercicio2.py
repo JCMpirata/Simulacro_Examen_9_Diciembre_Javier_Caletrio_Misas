@@ -89,6 +89,17 @@ def poner_torres(tablero):
     tablero[0].reverse()
     return tablero
 
+def main():
+    t = int(input("Elige el numero de partidas (Introduce un número entero entre 1 y 10): ", 1, 10))
+    n = int(input("¿Numero de casillas (Introduce un número entero entre 2 y 2000): ", 2, 2000))
+    for i in range(t):
+        tablero = poner_torres(crea_tablero(n))
+        ganador = juego(tablero)
+        print(f"El ganador es el jugador {int(not ganador)+1}")
+
+if __name__ == '__main__':
+    main()
+
 
 
 
