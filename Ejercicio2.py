@@ -33,6 +33,21 @@ def mostrar_matriz(matriz):
     for i in range(len(matriz)):
         print(matriz[i])
 
+def juego(tablero):
+    jugador = True
+    while True:
+        mostrar_matriz(tablero)
+        if not puede_moverse(jugador, tablero):
+            return jugador
+        tablero = movimiento(int(jugador) + 1, tablero)
+        if jugador:
+            jugador = False
+        else:
+            jugador = True
+
+
+
+
 
 
     
