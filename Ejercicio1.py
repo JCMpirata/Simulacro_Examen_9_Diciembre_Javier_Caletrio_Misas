@@ -10,3 +10,10 @@ def minion_game(string):
                 substrings[string[i:j]] = substrings.get(string[i:j], 0) + 1
             kevin_score = sum(substrings.values())
             print(substrings)
+
+        else:
+            for j in range(i + 1, len(string) + 1):
+                substrings[string[i:j]] = substrings.get(string[i:j], 0) + 1
+            stuart_score = sum(substrings.values())
+
+        
